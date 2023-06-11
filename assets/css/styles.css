@@ -47,9 +47,9 @@ html {
 
 body {
   margin: var(--header-height) 0 0 0;
-  font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
+  font-family: 'Kufam', sans-serif;
 }
 
 h1, h2, p {
@@ -348,6 +348,7 @@ img {
   margin-bottom: var(--mb-4);
   border-radius: .5rem;
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  font-family: var(--body-font);
 }
 
 .skills__icon {
@@ -438,6 +439,7 @@ img {
   text-align: center;
   font-weight: var(--font-semi);
   padding: 2rem 0;
+  font-family: var(--body-font);
 }
 
 .footer__title {
@@ -581,3 +583,98 @@ img {
     width: 450px;
   }
 }
+
+
+
+
+
+
+
+/* Start Account Page */
+@media (max-width: 992px) {
+  .landing .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+.landing {
+  padding: 150px 0;
+}
+.landing .container {
+  display: flex;
+  align-items: center;
+}
+.landing .container {
+  gap: 1rem;
+  flex: 1;
+}
+.landing .container div img {
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+}
+.be-f {
+  position: relative;
+  cursor: pointer;
+}
+.be-f::before {
+  content: "موقع خمسات";
+  background-color: var(--first-color1);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: .5rem;
+  opacity: .8;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+
+.be-ff {
+  position: relative;
+  cursor: pointer;
+}
+.be-ff::before {
+  content: "موقع مستقل";
+  background-color: var(--first-color1);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: .5rem;
+  opacity: .8;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+
+/* @media (min-width: 992px) {
+  .title-account {
+    top: 80px;
+  }
+} */
+.title-account {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  position: relative;
+  margin-bottom: 3rem;
+}
+.title-account h2 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.title-account p {
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--first-color);
+}
+/* End Account Page */
