@@ -418,7 +418,11 @@ img {
     width: 100% !important;
   }
 }
-
+@media (max-width: 767px) {
+  .home__title {
+    font-size: 2.5rem;
+  }
+}
 /* ===== CONTACT =====*/
 .contact__input {
   width: 100%;
